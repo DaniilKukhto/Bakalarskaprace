@@ -1,0 +1,14 @@
+ # Virtual environments
+ .venv/
+
+ # Local / large data files (full dataset kept outside git)
+ PhiUSIIL_Phishing_URL_Dataset.csv
+ data/
+
+ # IDE / editor settings
+ .vscode/
+ .idea/
+
+ # macOS system files
+ .DS_Store
+
