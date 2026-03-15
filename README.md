@@ -40,35 +40,25 @@ pip install -r requirements.txt
 
 ### 4. Input data: PhiUSIIL CSV
 
-The script expects a CSV file:
-
-- `PhiUSIIL_Phishing_URL_Dataset.csv`
-
-You must pass the CSV path via the `--csv_path` argument.
-
-Example:
+The full dataset **`PhiUSIIL_Phishing_URL_Dataset.csv`** is included in this repository (235,795 rows, 54 features). No additional download is needed — just clone the repository and run:
 
 ```bash
 python -m src.run_experiment --csv_path "PhiUSIIL_Phishing_URL_Dataset.csv"
 ```
 
-### 4.1. Downloading the full PhiUSIIL dataset
+### 4.1. Alternative: downloading the dataset manually
 
-The original PhiUSIIL Phishing URL Dataset is not included in this repository because of its size.
+If the CSV file is missing or you want to get the original source, download it from the UCI Machine Learning Repository:
 
-To run the experiment on the full data:
-
-1. Open the UCI Machine Learning Repository page for the dataset:  
+1. Open the dataset page:  
    `http://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset`
-2. Download the CSV file **`PhiUSIIL_Phishing_URL_Dataset.csv`** from that page.
-3. Place the downloaded file in the **project root** (the same folder where `README.md` and `requirements.txt` are located).
-4. Run the experiment and point to this file via the `--csv_path` argument, for example:
+2. Download **`PhiUSIIL_Phishing_URL_Dataset.csv`**.
+3. Place it in the **project root** (the same folder as `README.md` and `requirements.txt`).
+4. Run:
 
    ```bash
    python -m src.run_experiment --csv_path "PhiUSIIL_Phishing_URL_Dataset.csv"
    ```
-
-If you want to use a smaller sample for quick testing, you can create a reduced CSV (e.g., the first 10,000 rows) and pass its path instead of the full dataset.
 
 ### 5. Experiment design
 
